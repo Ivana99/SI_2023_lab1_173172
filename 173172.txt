@@ -1,0 +1,118 @@
+$ git config --global user.name "Ivana99"
+$ git config --global user.email ivanaaa99.is@gmail.com
+
+3. Klonirame repository
+$ git clone https://github.com/Ivana99/SI_2023.git_lab1_173172.git
+
+4. Vleguvame vo lokalen repository
+$ cd SI_2023_lab1_173172
+
+5. Inicijalizirame
+$ git init
+
+6. Kreirame README txt file 
+$ notepad README.txt
+
+   Go popolnuvame fajlot
+-- so komandata notepad avtomatski se otvori notepad i vnatre zapisav ime, prezime i index i ja zacuvav
+   
+   Go dodavame
+$ git add README.txt
+   
+   Pravime commit
+$ git commit -m "initial commit"
+$ git push
+
+7. Kreirame file SILab1.java i ja kopirame sodrzinata od dadeniot kod
+$ nano SILab1.java 
+$ git add SILab1.java
+$ git commit -m "Add java class"
+$ git push
+
+
+8. Sinhronizacija 
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+
+
+9. Kreirame branchovi 
+$ git branch bug1
+$ git branch bug2
+$ git branch bug3
+$ git log
+$ git branch             // proverka za koi branchovi gi imame
+
+10. Prefrlanje na branch bug1
+$ git checkout bug1
+
+11. Popravanje na greskata - bug1
+$ nano SILab1.java
+--- popraviv greshkata vo loopot ---
+$ git add SILab1.java
+$ git commit -m 'Fix wrong loop for reading'
+
+12. Prefrlanje na branch bug2
+$ git checkout bug2
+
+13. Popravanje na greskata - bug2
+$ nano SILab1.java
+--- popraviv greshkata vo uslovot ---
+$ git add SILab1.java
+$ git commit -m 'Fix wrong condition in filterOddNumbers'
+
+15. Prefrlanje na branch bug3
+$ git checkout bug3
+
+16. Popravanje na greskata - bug3
+$ nano SILab1.java
+--- popraviv greshkata vo uslovot ---
+$ git add SILab1.java
+$ git commit -m 'Fix method sumEvenNumbers'
+
+17. Sinhronizacija 
+$ git push origin bug3
+
+$ git checkout bug2
+$ git push origin bug2
+
+$ git checkout bug1
+$ git push origin bug1
+
+18. Prefrluvanje na master
+$ git checkout main 
+
+19. Spojuvanje na main so bug1
+$ git merge bug1
+
+20. Синхронизирајте ги сите гранки со оддалечениот репозиториум
+$ git push origin master
+
+21. Spojuvanje na main so bug2
+$ git merge bug2
+
+22. Синхронизирајте ги сите гранки со оддалечениот репозиториум
+$ git push origin master
+
+23. Spojuvanje na main so bug3
+$ git merge bug1
+
+24. Синхронизирајте ги сите гранки со оддалечениот репозиториум
+$ git push origin master
+
+24. Додавање notepad logs.txt
+$ notepad logs.txt
+$ add logs.txt
+$ git commit -m "logs.txt"
+
+24. Додавање notepad 173172.txt
+$ notepad 173172.txt
+$ add 173172.txt
+$ git commit -m "173172.txt"
+
+
+
+
+
+
