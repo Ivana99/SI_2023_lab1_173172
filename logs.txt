@@ -1,0 +1,273 @@
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~ (master)
+$ git clone https://github.com/Ivana99/SI_2023_lab1_173172
+Cloning into 'SI_2023_lab1_173172'...
+warning: You appear to have cloned an empty repository.
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~ (master)
+$  cd SI_2023_lab1_173172
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/user/SI_2023_lab1_173172/.git/
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ notepad README.txt
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git add README.txt
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) f50c3bb] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 241 bytes | 241.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ivana99/SI_2023_lab1_173172
+ * [new branch]      master -> master
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ nano SILab1.java
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git add SILab1.java
+warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git commmit -m "Add java class"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git commit -m "Add java class"
+[master d8d26db] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 622 bytes | 622.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ivana99/SI_2023_lab1_173172
+   f50c3bb..d8d26db  master -> master
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git branch bug1
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git branch bug2
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git branch bug3
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git log
+commit d8d26db95ae8c7cfc1cac50a2980b209d38c48d4 (HEAD -> master, origin/master, bug3, bug2, bug1)
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 9 19:07:27 2023 +0200
+
+    Add java class
+
+commit f50c3bb1b4bf0b8cf5672b9e56fd5bf44fcdcbe1
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 9 19:06:15 2023 +0200
+
+    Initial commit
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git branch
+  bug1
+  bug2
+  bug3
+* master
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug1)
+$ nano SILab1.java
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug1)
+$ git add SILab1.java
+warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug1)
+$ git commit -m "Fix wrong loop for reading"
+[bug1 03b8d3d] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug2)
+$ nano SILab1.java
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug2)
+$ git add SILab1.java
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug2)
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 5178ec3] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug3)
+$ nano SILab1.java
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug3)
+$ git add SILab1.java
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug3)
+$ git commit -m "Fix method sumEvenNumbers"
+[bug3 9d4b00d] Fix method sumEvenNumbers
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug3)
+$ git push origin bug3
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/Ivana99/SI_2023_lab1_173172/pull/new/bug3
+remote:
+To https://github.com/Ivana99/SI_2023_lab1_173172
+ * [new branch]      bug3 -> bug3
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug3)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug2)
+$ git push origin bug2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/Ivana99/SI_2023_lab1_173172/pull/new/bug2
+remote:
+To https://github.com/Ivana99/SI_2023_lab1_173172
+ * [new branch]      bug2 -> bug2
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug1)
+$ git push origin bug1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/Ivana99/SI_2023_lab1_173172/pull/new/bug1
+remote:
+To https://github.com/Ivana99/SI_2023_lab1_173172
+ * [new branch]      bug1 -> bug1
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (bug1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git merge bug1
+Updating d8d26db..03b8d3d
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ push origin master
+bash: push: command not found
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ivana99/SI_2023_lab1_173172
+   d8d26db..03b8d3d  master -> master
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 384 bytes | 384.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ivana99/SI_2023_lab1_173172
+   03b8d3d..747fe11  master -> master
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ merge bug3
+bash: merge: command not found
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git merge bug3
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 383 bytes | 383.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ivana99/SI_2023_lab1_173172
+   747fe11..bbeafae  master -> master
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ git rebase
+Current branch master is up to date.
+
+Ivana Stojanovska@DESKTOP-M1F6QO5 MINGW64 ~/SI_2023_lab1_173172 (master)
+$ notepad logs.txt
